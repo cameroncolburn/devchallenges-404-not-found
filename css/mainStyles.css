@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    margin: 20px 24px;
+}
+
+.flex-container {
+    flex: 1 0 auto;
+}
+
+/* 404 not found title */
+.title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* scarecrow image */
+.scarecrow-img {
+    display: block;
+    height: auto;
+    margin: 60px auto;
+    min-width: 287px;
+    max-width: 587px;
+    width: 100%;
+}
+
+/* cta content */
+.content {
+    font-family: 'Space Mono', monospace;
+    min-width: 350px;
+    margin: 0 auto;
+    max-width: 587px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.content p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 30px 0;
+    max-width: 382px;
+}
+
+/* cta content: button */
+.back-button {
+    background-color: #333;
+    border: none;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 40px 0 0 0;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    width: 100%;
+}
+
+.footer {
+    /* display: inline-block; */
+    align-self: flex-end;
+    display: flex;
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ############## MEDIA QUERIES ############## */
+@media screen and (min-width: 900px) {
+    .flex-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+/* cta content */
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+}
